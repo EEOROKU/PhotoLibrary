@@ -112,7 +112,7 @@ public class PhotoLibrary {
      */
     public int numPhotographs() {
         //TODO 5 replace this code
-        return 0;
+        return photos.size();
     }
 
     /**
@@ -124,7 +124,9 @@ public class PhotoLibrary {
      */
     public boolean addPhoto(Photograph p) {
         //TODO 5 replace this code
-        return false;
+        if (int i=0;i< numPhotographs();i++){
+
+        }
     }
 
     /**

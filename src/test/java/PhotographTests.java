@@ -23,7 +23,8 @@ public class PhotographTests {
     public void testConstructorFilenameSet() {
 
         //code for TODO 3 here
-
+        Photograph a = new Photograph("myFile.png","The dancing banana");
+        assertEquals("myFile.png",a.getFilename());
     }
 
 

@@ -6,7 +6,8 @@ package photos;
 public class Photograph {
 
     //TODO 2 add instance fields
-
+    public  String theFileName;
+    public String theCaption;
     /**
      * Public constructor
      * @param theFileName local filename of the photograph
@@ -15,6 +16,8 @@ public class Photograph {
     public Photograph(String theFileName, String theCaption) {
 
         //TODO 2 complete the constructor
+        this.theCaption = theCaption;
+        this.theFileName = theFileName;
     }
     /**
      * getter for the caption
@@ -22,7 +25,7 @@ public class Photograph {
      */
     public String getCaption() {
         //TODO 2 replace this code
-        return "";
+        return theCaption;
     }
 
     /**
@@ -32,7 +35,7 @@ public class Photograph {
     public String getFilename() {
 
         //TODO 2 replace this code
-        return "";
+        return theFileName;
     }
 
 
@@ -61,7 +64,12 @@ public class Photograph {
         Photograph photo = (Photograph) o;
 
         //TODO 2 your code here (replace the return false)
-        return false;
+        if (this.getFilename().equals(photo.getFilename()) && this.getCaption().equals(photo.getCaption())){
+            return true;
+        }
+        else{
+            return false;
+        }
 
     }
 
@@ -71,7 +79,8 @@ public class Photograph {
      */
     public String toString() {
         //TODO 2 replace this code with your code
-        return "";
+
+        return theFileName+theCaption;
     }
 
 
